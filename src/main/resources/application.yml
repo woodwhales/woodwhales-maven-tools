@@ -1,0 +1,20 @@
+server:
+  port: 8081
+  servlet:
+      context-path: /maven-tools
+  tomcat:
+    basedir: ../tmp/
+ 
+logging:
+  level:
+    org.woodwhales.maven: debug
+  
+spring:
+  application:
+    name: maven-tools
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  thymeleaf:
+    cache: false
